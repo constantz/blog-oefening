@@ -9,7 +9,10 @@ class Project extends Model
     protected $fillable = [
         'title', 'description'
     ];
-
-    // of:
+    // of (alles toestaan):
     // protected $guarded = []; (lege array)
+
+    public function tasks() {
+        return $this->hasMany(Task::class);
+    }
 }

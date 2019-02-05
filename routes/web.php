@@ -32,3 +32,5 @@ Route::resource('/projects', 'ProjectsController');
 // Route::get('projects/{project}/edit', 'ProjectsController@edit');
 // Route::patch('projects/{project}', 'ProjectsController@update');
 // Route::delete('projects/{project}', 'ProjectsController@destroy');
+
+Route::patch('/tasks/{task}', 'ProjectTasksController@update');
